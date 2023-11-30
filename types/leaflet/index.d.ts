@@ -199,7 +199,7 @@ export class LatLngBounds {
 
 export type LatLngBoundsLiteral = LatLngTuple[]; // Must be [LatLngTuple, LatLngTuple], cant't change because Map.setMaxBounds
 
-export type LatLngBoundsExpression = LatLngBounds | LatLngBoundsLiteral;
+export type LatLngBoundsExpression = LatLngBounds | LatLngBounds[] | LatLngBoundsLiteral;
 
 export function latLngBounds(southWest: LatLngExpression, northEast: LatLngExpression): LatLngBounds;
 
